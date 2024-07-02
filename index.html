@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Hem Baxi Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -19,6 +20,7 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         header {
             text-align: center;
@@ -27,11 +29,12 @@
         header h1 {
             margin: 0;
             padding: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            color: #333;
         }
         header p {
             font-size: 1.2em;
-            color: #666;
+            color: #777;
         }
         .section {
             margin-bottom: 20px;
@@ -39,73 +42,127 @@
         .section h2 {
             margin-bottom: 10px;
             color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
-        .section p {
+        .section p, .section ul {
             margin: 0;
             padding: 0;
-        }
-        .contact, .education, .experience, .skills {
-            margin-bottom: 20px;
-        }
-        .contact ul, .skills ul {
             list-style: none;
-            padding: 0;
         }
-        .contact ul li, .skills ul li {
+        .section ul li {
             padding: 5px 0;
         }
-        .education p, .experience p {
-            margin-bottom: 5px;
-        }
-        .education span, .experience span {
-            display: block;
-            color: #666;
+        .section ul li::before {
+            content: "•";
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Your Name</h1>
-            <p>Your Address | Your Phone | Your Email</p>
+            <h1>Hem Baxi</h1>
+            <p>D201 Avalon Courtyard Near, NH-8, Cadila Rd, Ghodasar, Ahmedabad, Gujarat 380050<br>
+            Email: <a href="mailto:hembaxi50@gmail.com">hembaxi50@gmail.com</a> | Phone: +91-8460841491</p>
         </header>
 
-        <section class="contact section">
-            <h2>Contact Information</h2>
+        <section class="section">
+            <h2>Job Objectives</h2>
+            <p>Seeking a position in an organization that provides ample opportunities to explore &amp; excel my abilities while achieving professional and organizational goals.</p>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience Summary</h2>
+            <p><strong>DevOps Engineer, Saarthi Pedagogy</strong> (July 2023 - Present)</p>
             <ul>
-                <li>Email: youremail@example.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: Your Address</li>
+                <li>Working with Jenkins CI-CD.</li>
+                <li>Product deployed on AWS ECS to manage and create infrastructure.</li>
+                <li>Conducted R&D on various technologies, including flutter automation for APK creation and deployment on Google Drive for testing.</li>
+                <li>Created Grafana and Prometheus for deployment monitoring.</li>
+            </ul>
+
+            <p><strong>Senior DevOps Engineer, Sea Flux Technologies</strong> (Dec 2022 - July 2023)</p>
+            <ul>
+                <li>Automated the sending of logs and metrics of the host machine and Docker Daemon.</li>
+                <li>Worked on CI-CD using GitHub, GitLab, Jenkins, AWS CI-CD, Bitbucket CI-CD.</li>
+                <li>Managed multiple AWS services including CloudFront, EC2, S3, ECS, ECR, and more.</li>
+                <li>Worked on Azure environment for one project.</li>
+                <li>Created a test project of Kubernetes using Helm.</li>
+                <li>Worked on multiple types of domain providers and Grafana Prometheus for project monitoring.</li>
+                <li>Utilized Terraform for infrastructure management and docker/docker-compose for containerization.</li>
+                <li>Configured nginx for deployment.</li>
+            </ul>
+
+            <p><strong>DevOps Engineer, Agile Info-ways Private Limited</strong> (Sept 2020 - March 2022)</p>
+            <ul>
+                <li>Configured Nginx and Apache for deployment.</li>
+                <li>Created Jenkins and Docker CI-CD pipelines and managed Docker in the local environment using Portainer and Harbor.</li>
+                <li>Configured SonarQube for code testing automation.</li>
+                <li>Worked on various AWS CICD services including Fargate, ECR, ECS, CodeBuild, CodeCommit, EC2, Load balancer, Auto Scaling, Elastic Cache, Certificate Manager, Route 53, Secret Manager, VPC, and Security Group.</li>
+                <li>Managed IAM, RDS, SNS, and CloudWatch Monitoring.</li>
             </ul>
         </section>
 
-        <section class="education section">
-            <h2>Education</h2>
-            <p><strong>University Name</strong> - Degree</p>
-            <span>Graduation Date</span>
-            <p><strong>Another Institution</strong> - Degree</p>
-            <span>Graduation Date</span>
-        </section>
-
-        <section class="experience section">
-            <h2>Work Experience</h2>
-            <p><strong>Job Title</strong> - Company Name</p>
-            <span>Start Date - End Date</span>
-            <p>Brief description of your responsibilities and achievements.</p>
-            
-            <p><strong>Another Job Title</strong> - Company Name</p>
-            <span>Start Date - End Date</span>
-            <p>Brief description of your responsibilities and achievements.</p>
-        </section>
-
-        <section class="skills section">
-            <h2>Skills</h2>
+        <section class="section">
+            <h2>Technological Skills</h2>
             <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
+                <li>Experience in AWS: IAM, VPC, ECR, Load Balancer, RDS, Security Hub, CloudWatch, CloudFront.</li>
+                <li>Experienced in Bash Scripting.</li>
+                <li>Proficient with Git.</li>
+                <li>Hands-on knowledge of Docker and Kubernetes.</li>
+                <li>Good understanding of Infrastructure as Code (IaC) using Terraform.</li>
+                <li>Experience with AWS Pipelines and Jenkins.</li>
+                <li>Proficient in Linux.</li>
             </ul>
+        </section>
+
+        <section class="section">
+            <h2>Responsibilities</h2>
+            <ul>
+                <li>Migrating on-premises infrastructure to cloud.</li>
+                <li>Managing infrastructure on AWS and Azure.</li>
+                <li>Handling container orchestration using Kubernetes.</li>
+                <li>Managing AWS Pipeline CI-CD and multiple other CI-CD platforms.</li>
+                <li>Handling outages and performance issues.</li>
+                <li>Using monitoring tools like Grafana and Prometheus.</li>
+                <li>Analyzing server-level issues (Performance).</li>
+                <li>Attending team meetings to share project status, issues, and ideas.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Qualifications</h2>
+            <p><strong>MSc(IT), Ganpat University</strong> (2018-2020)</p>
+            <p>Information Technology</p>
+
+            <p><strong>BScIT(IMS), Ganpat University</strong> (2016-2018)</p>
+            <p>Information Technology</p>
+
+            <p><strong>Diploma in Computer Engineering, Gujarat Technical University</strong></p>
+
+            <p><strong>S.S.C, Gujarat State Education Board</strong> (March 2001)</p>
+            <p>General Stream</p>
+        </section>
+
+        <section class="section">
+            <h2>Personal Details</h2>
+            <p><strong>Name:</strong> Hem H Baxi</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Date of Birth:</strong> 03-FEB-1996</p>
+            <p><strong>Marital Status:</strong> Single</p>
+            <p><strong>Nationality:</strong> Indian</p>
+        </section>
+
+        <section class="section">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the above information is correct to the best of my knowledge and belief.</p>
+            <p><strong>Place:</strong> __________________</p>
+            <p><strong>Date:</strong> __________________</p>
         </section>
     </div>
 </body>
