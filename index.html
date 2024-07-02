@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hem Baxi Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 800px;
+            margin: 30px auto;
             padding: 20px;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         header {
             text-align: center;
@@ -28,9 +29,8 @@
         }
         header h1 {
             margin: 0;
-            padding: 0;
             font-size: 2.5em;
-            color: #333;
+            color: #007bff;
         }
         header p {
             font-size: 1.2em;
@@ -41,8 +41,8 @@
         }
         .section h2 {
             margin-bottom: 10px;
-            color: #333;
-            border-bottom: 2px solid #333;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 5px;
         }
         .section p, .section ul {
@@ -52,14 +52,31 @@
         }
         .section ul li {
             padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
         }
         .section ul li::before {
             content: "•";
-            color: #007BFF;
+            color: #007bff;
             font-weight: bold;
             display: inline-block;
             width: 1em;
             margin-left: -1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
     </style>
 </head>
@@ -67,8 +84,11 @@
     <div class="container">
         <header>
             <h1>Hem Baxi</h1>
-            <p>D201 Avalon Courtyard Near, NH-8, Cadila Rd, Ghodasar, Ahmedabad, Gujarat 380050<br>
-            Email: <a href="mailto:hembaxi50@gmail.com">hembaxi50@gmail.com</a> | Phone: +91-8460841491</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:hembaxi50@gmail.com">hembaxi50@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918460841491">+91-8460841491</a></p>
+                <p>Location: Ahmedabad, Gujarat, India</p>
+            </div>
         </header>
 
         <section class="section">
